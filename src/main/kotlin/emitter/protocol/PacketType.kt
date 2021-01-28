@@ -1,4 +1,4 @@
-package emitter
+package emitter.protocol
 
 enum class PacketType(val value: Int) {
     CONNECT(0),

@@ -2,6 +2,7 @@ package emitter
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import emitter.protocol.Packet
+import emitter.protocol.PacketType
 import org.msgpack.jackson.dataformat.MessagePackFactory
 import org.redisson.api.RedissonClient
 
