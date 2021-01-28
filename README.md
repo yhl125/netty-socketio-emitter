@@ -47,7 +47,7 @@ repositories {
 }
 
 dependencies {
-	implementation("com.github.yhl125:netty-socketio-emitter:0.1.0")
+	implementation("com.github.yhl125:netty-socketio-emitter:0.1.1")
 }
 ```
 
@@ -66,7 +66,7 @@ dependencies {
 <dependency>
     <groupId>com.github.yhl125</groupId>
     <artifactId>netty-socketio-emitter</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 </dependency>
 ```
 

@@ -58,7 +58,7 @@ class Emitter(private val redis: RedissonClient) {
 
         val messageMapper = ObjectMapper(MessagePackFactory())
 
-        var topic = "${this.key}${this.namespace}#}"
+        var topic = "${this.key}${packet.namespace}#}"
         if (rooms.size == 1) {
             topic += "${this.rooms.first()}#"
         }
