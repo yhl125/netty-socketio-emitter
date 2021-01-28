@@ -51,8 +51,8 @@ class Emitter(private val redis: RedissonClient) {
      */
     private fun emit(packet: Packet): Emitter {
         if (this.namespace.isNullOrEmpty()) {
-            packet.nsp = "/"
-        } else packet.nsp = this.namespace!!
+            packet.namespace = "/"
+        } else packet.namespace = this.namespace!!
 
         packet.rooms = this.rooms
 
