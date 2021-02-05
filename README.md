@@ -11,7 +11,6 @@ val redissonClient = Redisson.create(redisConfig)
 val emitter = Emitter(redissonClient)
 
 // sending to all clients in "testRoom" room
-emitter.to("testRoom").emit("testEvent", "sting1", "sting2", /* ... */)
 emitter.to("testRoom").emit("testEvent", Any)
 emitter.to("testRoom").emit("testEvent", ByteArray)
 
@@ -47,7 +46,7 @@ repositories {
 }
 
 dependencies {
-	implementation("com.github.yhl125:netty-socketio-emitter:0.1.1")
+	implementation("com.github.yhl125:netty-socketio-emitter:0.1.2")
 }
 ```
 
@@ -66,7 +65,7 @@ dependencies {
 <dependency>
     <groupId>com.github.yhl125</groupId>
     <artifactId>netty-socketio-emitter</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
 </dependency>
 ```
 

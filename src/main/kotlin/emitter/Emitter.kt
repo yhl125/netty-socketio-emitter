@@ -34,10 +34,6 @@ class Emitter(private val redis: RedissonClient) {
         return this
     }
 
-    fun emit(event: String, vararg data: String): Emitter {
-        return this.emit(Packet(PacketType.EVENT.value, event, listOf(data)))
-    }
-
     fun emit(event: String, data: Any): Emitter {
         return this.emit(Packet(PacketType.EVENT.value, event, data))
     }
